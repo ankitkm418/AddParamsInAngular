@@ -1,0 +1,3 @@
+ getStateById(stateId) {
+        return this.http.get<any>(environment.user_service_url + "/getStateById", {params:{"stateId": stateId}});
+    }
